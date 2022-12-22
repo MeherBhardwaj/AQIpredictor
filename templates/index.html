@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(13, 34, 130, 0.11);
+}
+h1{
+    text-align: center;
+    color: rgb(99, 44, 71);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 13, 13);
+    opacity: 1;
+    padding-top: 30px;
+}
+.container p{
+    margin: 0;
+    color: rgb(227, 20, 175);
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding-left: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
+.container input{
+    font-size: 16px;
+    width: 90%;
+    border-radius: 10px;
+    height: 26px;
+    margin: 5px;
+    border-color: white;
+    background-color: rgb(142, 153, 153);
+}
+.container button{
+    background-color: rgb(59, 59, 172);
+    width: 80%;
+    margin-left: 50px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    color: bisque;
+}
+.container button:hover{
+    background-color: brown;
+    color: white;
+    font-size: 18px;
+}
+.container form{
+    padding-left: 230Px;
+    padding-right: 230px;
+}
+</style>
+<body>
+    <h1>AQI Estimator</h1>
+    <div class="container">
+        <form action="/output" method="post">
+            <p>Enter Particle Matter 10 Concentration</p>
+            <input type="text" name="PM10" id="PM10" required>
+
+            <p>Enter Particle Matter 2.5 Concentration</p>
+            <input type="text"  name="PM2.5" id="PM2.5" required>
+
+            <p>Enter Nitrogen Mono-oxide concentration</p>
+            <input type="text" name="NO" id="NO" required>
+
+            <p>Enter Nitrogen Dioxide concentration</p>
+            <input type="text" name="NO2" id="NO2" required>
+
+            <p>Enter Nitrogen Oxides concentration</p>
+            <input type="text" name="NOx" id="NOx" required>
+
+            <p>Enter Ammonia concentration</p>
+            <input type="text" name="NH3" id="NH3" required>
+
+            <p>Enter Carbon Mono-oxide concentration</p>
+            <input type="text" name="CO" id="CO" required>
+
+            <p>Enter Sulphur Dioxide concentration</p>
+            <input type="text" name="SO2" id="SO2" required>
+
+            <p>Enter Ozone concentration</p>
+            <input type="text" name="O3" id="O3" required>
+
+            <p>Enter Benzene concentration</p>
+            <input type="text" name="Benzene" id="Benzene" required>
+
+            <p>Enter Toluene concentration</p>
+            <input type="text" name="Toluene" id="Toluene"  required>
+
+            <p>Enter Xylene concentration</p>
+            <input type="text" name="Xylene" id="Xylene" required>
+
+            <button type="submit">Check AQI</button>
+        </form>
+    </div>
+</body>
+</html>
